@@ -1,0 +1,18 @@
+.newsContentAndAds{
+    width: 76%;
+}
+.sideBar{
+    padding-right: 24px;
+    width: 24%;
+}
+
+.sectionHeader p{
+    font-size: 20px;
+    margin: 0 !important;
+    line-height: unset !important;
+}
+
+.sidbarAds{
+    width: 300px;
+    height: 300px;
+}
