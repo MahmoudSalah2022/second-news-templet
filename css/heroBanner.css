@@ -108,6 +108,7 @@ border-right: 2px solid #D9D9D9;
 .slidercontainer {
     width: 731px;
     overflow: scroll;
+    overflow-y: hidden;
 }
 
 .mainslider {
