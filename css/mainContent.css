@@ -1,11 +1,13 @@
 .mainContant{
     flex-direction: row-reverse;
 }
-.newsContentAndAds{
-    flex-direction: row-reverse;
+.newsMainContant{
+    width: 76%;
+    flex-direction: column;
 }
 .newsContentAndAds{
-    width: 76%;
+    width: 100%;
+    flex-direction: row-reverse;
 }
 
 .newsContent {
@@ -14,7 +16,7 @@
 }
 
 .ads {
-    height: 50%;
+    height: 82%;
     position: sticky;
     top: 50px;
 }
@@ -115,6 +117,54 @@
     text-align: center;
     text-decoration: none;
 }
+
+.alboumImageSlider {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 50px;
+    gap: 16px;
+}
+
+#alboumImageSlider{
+    width: 100% !important;
+}
+
+.alboumImageSlider .sectionHeader {
+    width: 100%;
+    justify-content:flex-start;
+}
+
+.alboumImageSlider .sectionHeader p{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 !important;
+    line-height: unset !important;
+}
+
+#alboumVideoSlider{
+    width: 100% !important;
+}
+
+.alboumVideoSlider .sectionHeader {
+    width: 100%;
+    justify-content:flex-start;
+}
+
+.alboumVideoSlider .sectionHeader p{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 !important;
+    line-height: unset !important;
+}
+
+.news-wrap{
+    display: flex;
+    gap: 8px;
+}
+
+
 
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
     .newsContentAndAds {
