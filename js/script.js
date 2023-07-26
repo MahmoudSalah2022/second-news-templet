@@ -23,3 +23,26 @@ slider.addEventListener('mousemove', (e) => {
 slider.addEventListener('mousedown', startDragging, false);
 slider.addEventListener('mouseup', stopDragging, false);
 slider.addEventListener('mouseleave', stopDragging, false);
+
+
+let searchFilter = document.querySelector('.advancedSearchOption');
+let searchFilterButton = document.querySelector('.advancedSearchButton');
+
+searchFilterButton.addEventListener('click', () =>{
+  searchFilter.classList.toggle('showeElement')
+});
+
+
+let closeButtons = document.querySelectorAll('.close');
+let toggleNavbar = document.querySelector('.navBar > .navbarMenu');
+let navbarToggler = document.querySelector('.navbar-toggler');
+
+navbarToggler.addEventListener('mouseover', () => {
+  toggleNavbar.classList.remove('hiddenElement')
+});
+
+closeButtons.forEach((closeButton) => {
+  closeButton.addEventListener('click', () => {
+    toggleNavbar.classList.add('hiddenElement')
+  });
+});

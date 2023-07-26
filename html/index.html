@@ -53,7 +53,10 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <div class="navBar">
-                            <ul class="d-flex flex-row-reverse gap-4 m-0">
+                            <ul class="navbarMenu flex-row-reverse gap-4 m-0">
+                                <li class="nav-item close">
+                                    <i class="fas fa-window-close"></i>
+                                </li>
                                 <li class="nav-item">
                                     <a class="navMainLink nav-link active" aria-current="page" href="#">الرئيسية</a>
                                 </li>
@@ -96,43 +99,40 @@
                     </div>
                 </div>
             </nav>
-            <div
-                class="row searchAndOurservices d-flex flex-row-reverse justfiy-content-center align-items-center gap-4">
-                <div
-                    class="col-8 col-md-9 searchBar d-flex flex-row-reverse justfiy-content-center align-items-center my-4 gap-1 gap-md-4">
+            <div class="row searchAndOurservices d-flex flex-row-reverse justfiy-content-center align-items-center gap-4">
+                <div class="col-8 col-md-9 searchBar d-flex justfiy-content-center my-4 gap-1 gap-md-4">
                     <input class="inputSearch" type="text" placeholder="ما الخبر الذي تبحث عنه ... ؟">
-                    <div class="advancedSearch d-flex flex-row justify-content-center align-items-center">
-                        <i class="fas fa-angle-down"></i>
-                        <p>بحث متطور</p>
-                    </div>
-                    <div class="searchicon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                    <div class="advancedSearchOption">
-                        <select class="sectionsMenu form-select" aria-label="Default select example">
-                            <option selected>اختار القسم</option>
-                            <option value="1">عاجل</option>
-                            <option value="2">سياسة</option>
-                            <option value="3">اقتصاد</option>
-                        </select>
-                        <select class="sectionsMenu form-select" aria-label="Default select example">
-                            <option selected>اليوم</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                        </select>
-                        <select class="sectionsMenu form-select" aria-label="Default select example">
-                            <option selected>الشهر</option>
-                            <option value="مايو">مايو</option>
-                        </select>
-                        <select class="sectionsMenu form-select" aria-label="Default select example">
-                            <option selected>السنه</option>
-                            <option value="2023">2023</option>
-                        </select>
+                    <div class="advancedSearch">
+                        <div class="advancedSearchButton d-flex flex-row justify-content-center align-items-center">
+                            <i class="fas fa-angle-down"></i>
+                            <p>بحث متطور</p>
+                        </div>
+                        <div class="advancedSearchOption">
+                            <select class="sectionsMenu form-select" aria-label="Default select example">
+                                <option selected>اختار القسم</option>
+                                <option value="1">عاجل</option>
+                                <option value="2">سياسة</option>
+                                <option value="3">اقتصاد</option>
+                            </select>
+                            <select class="sectionsMenu form-select" aria-label="Default select example">
+                                <option selected>اليوم</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                            <select class="sectionsMenu form-select" aria-label="Default select example">
+                                <option selected>الشهر</option>
+                                <option value="مايو">مايو</option>
+                            </select>
+                            <select class="sectionsMenu form-select" aria-label="Default select example">
+                                <option selected>السنه</option>
+                                <option value="2023">2023</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="col-1 col-md-2 ourServices d-flex flex-column align-items-center gap-1">

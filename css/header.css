@@ -47,13 +47,17 @@
 .submenu{
     margin-top: 10px !important;
 }
+.searchAndOurservices {
+    flex-wrap: inherit;
+}
 .searchBar{
     height: 50px;
-    padding: 20px 29px;
-    padding-left: 10px;
+    padding-top: 10px;
     border: 2px solid #1C8BDC;
     border-radius: 8px;
     margin-right: 25px !important;
+    align-items: flex-start;
+    flex-direction: row-reverse;
 }
 .inputSearch{
     width: 305px;
@@ -64,7 +68,8 @@
     outline: none;
 }
 
-.advancedSearch {
+
+.advancedSearchButton {
     width: 150px;
     color: white;
     background-color: #08395B;
@@ -75,24 +80,21 @@
     cursor: pointer;
 }
 
-.advancedSearch p {
+.advancedSearchButton p {
 font-size: 16px;
+margin: 0;
 }
 
-.advancedSearch:hover {
+.advancedSearchButton:hover {
     border-radius: 4px;
     box-shadow: 1px 2px 3px #00000063;
-}
-.advancedSearch p {
-    margin: 0;
 }
 
 .advancedSearchOption {
     position: relative;
-    top: 53px;
-    left: 38px;
+
     width: 0;
-    display: grid;
+    display: none;
     grid-template-columns: auto auto auto auto;
 }
 
@@ -102,7 +104,6 @@ font-size: 16px;
     border-radius: 8px !important;
 }
 .sectionsMenu option{
-
     text-align: right;
 }
 
@@ -140,7 +141,7 @@ font-size: 16px;
 }
 
 @media screen and (max-width: 1024px) {
-    .advancedSearch {
+    .advancedSearchButton {
         width: 119px;
         position: absolute;
         top: 328px;
@@ -155,16 +156,13 @@ font-size: 16px;
 
     .searchBar {
         width: 233px;
-        padding: 20px 10px;
     }
 
     .advancedSearchOption {
-        position: relative;
-        top: 104px !important;
-        left: 0px;
         width: 0;
-        display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto auto;
+        top: 77px;
+        left: 7px;
     }
 }
 
@@ -180,7 +178,7 @@ font-size: 16px;
         height: 100px;
     }
 
-    .advancedSearch {
+    .advancedSearchButton {
         width: 119px;
         position: absolute;
         top: 328px;
@@ -195,16 +193,27 @@ font-size: 16px;
 
     .searchBar {
         width: 348px;
-        padding: 20px 10px;
     }
 
     .advancedSearchOption {
-        position: relative;
-        top: 77px !important;
-        left: -11px;
         width: 0;
-        display: grid;
         grid-template-columns: auto auto auto auto;
+        top: 77px;
+        left: -28px;
+    }
+
+    .navBar > .navbarMenu {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column !important;
+        align-items: self-end;
+        background-color: #ffffff;
+        padding-right: 1em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
     }
 
 }
@@ -228,10 +237,9 @@ font-size: 16px;
 
     .searchBar {
         width: 232px;
-        padding: 20px 10px;
     }
 
-    .advancedSearch {
+    .advancedSearchButton {
         width: 119px;
         position: absolute;
         top: 401px;
@@ -239,15 +247,13 @@ font-size: 16px;
     }
 
     .advancedSearchOption {
-        position: relative;
-        top: 110px !important;
-        left: -11px;
         width: 0;
-        display: grid;
         grid-template-columns: auto auto ;
+        top: 77px;
+        left: 7px;
     }
 
-    .advancedSearch p {
+    .advancedSearchButton p {
         font-size: 12px;
         line-height: 14px;
         text-align: right;
@@ -255,7 +261,7 @@ font-size: 16px;
 }
 
 @media screen and (max-width: 375px) {
-    .advancedSearch {
+    .advancedSearchButton {
         width: 98px;
         position: absolute;
         top: 399px;
@@ -270,16 +276,13 @@ font-size: 16px;
 
     .searchBar {
         width: 210px;
-        padding: 20px 10px;
     }
 
     .advancedSearchOption {
-        position: relative;
-        top: 104px !important;
-        left: 0px;
         width: 0;
-        display: grid;
         grid-template-columns: auto auto;
+        top: 77px;
+        left: 7px;
     }
 }
 
@@ -289,11 +292,10 @@ font-size: 16px;
         display: none;
     }
 
-    .advancedSearch {
+    .advancedSearchButton {
         width: 98px;
-        position: absolute;
-        top: 399px;
-        left: 77px;
+        position: relative;
+        top: 2.5em;
     }
 
     .inputSearch {
@@ -304,15 +306,13 @@ font-size: 16px;
 
     .searchBar {
         width: 160px !important;
-        padding: 20px 10px;
     }
+
     .advancedSearchOption {
-        position: relative;
-        top: 104px !important;
-        left: 0px;
         width: 0;
-        display: grid;
         grid-template-columns: auto auto;
+        top: 50px;
+        left: 75px;
     }
 }
 
