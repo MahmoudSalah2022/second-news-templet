@@ -1,15 +1,20 @@
 @import "header.css";
+@import "footer.css";
+@import "mainContent.css";
+@import "heroBanner.css";
+@import "articlePage.css";
+@import "font.css";
 
 body{
     font-family: 'Tajawal', sans-serif !important;
     padding: 0px;
     margin: 0px;
+    text-align: right !important;
 }
 
 p{
-    margin: 0px;
-    padding: 0px;
-    line-height: 0;
+    margin: 0px !important;
+    padding: 0px !important;
 }
 
 ul{
@@ -21,6 +26,28 @@ a{
     padding: 0;
     margin: 0;
     text-decoration: none;
+}
+
+.media .mediaBox{
+    width: 44px;
+    height: 44px;
+    background: #1E1E1E;
+    color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.media .mediaBox:hover{
+    width: 44px;
+    height: 44px;
+    background: #1C8BDC;
+    color: white;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .showeElement{

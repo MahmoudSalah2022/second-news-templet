@@ -1,5 +1,8 @@
 @import "colorstheme.css";
 
+header{
+    margin-top: 15px;
+}
 /* top header */
 .topheaderAds img{
     width: 750px;
@@ -31,10 +34,20 @@
 }
 
 .bottomHeader{
-    margin-top: 38px;
+    margin-top: 30px;
+}
+
+.navbarMenu {
+    display: flex;
+    flex-direction: row-reverse !important;
+}
+
+.navbarMenu > .close {
+    display: none;
 }
 
 .dropdown-menu{
+    min-width: 60rem;
     width: 77vh;
 }
 .dropdown-menu.show {
@@ -46,6 +59,7 @@
 
 .submenu{
     margin-top: 10px !important;
+    transform: translateX(-560px);
 }
 .searchAndOurservices {
     flex-wrap: inherit;
@@ -216,12 +230,15 @@ margin: 0;
         z-index: 9999;
     }
 
+    .navbarMenu > .close {
+        display: block;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
     .topheaderAds img{
-        width: 80%;
-        height: 100px;
+        width: 90% !important;
     
     }
 
