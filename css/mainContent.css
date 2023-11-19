@@ -16,7 +16,7 @@
 }
 
 .ads {
-    height: 82%;
+    height: fit-content;
     position: sticky;
     top: 50px;
 }
@@ -27,6 +27,12 @@
     width: 24%;
 }
 
+.sideBarContent {
+    width: fit-content;
+    height: fit-content;
+    position: sticky;
+    top: 60px;
+}
 
 .sideBar .newsDetails {
     width: 210px;
@@ -55,20 +61,25 @@
     margin: 16px 0;
 }
 
+#carouselExampleIndicators{
+    margin-bottom: 25px;
+}
+
+
 .carousel {
     width: 264px;
     position: relative;
 }
 
 .carousel-indicators {
-    margin-bottom: -1.4rem;
+    margin-bottom: -2rem !important;
 }
 
 .carousel-indicators [data-bs-target] {
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: #1c8bdc;
+    height: 10px !important;
+    width: 10px !important;
+    border-radius: 50% !important;
+    background-color: #1c8bdc !important;
 }
 
 .servaycontainer{

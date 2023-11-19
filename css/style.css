@@ -3,6 +3,8 @@
 @import "mainContent.css";
 @import "heroBanner.css";
 @import "articlePage.css";
+@import "editorPage.css";
+@import "sectionPage.css";
 @import "font.css";
 
 body{

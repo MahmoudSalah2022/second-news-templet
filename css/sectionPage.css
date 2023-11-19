@@ -1,0 +1,108 @@
+.heroBannerSection .herobanner {
+width: fit-content !important;
+}
+.sectionNewsInfoContiner{
+    max-width: 1097px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px !important;
+    padding: 0px 27px !important;
+}
+.sectionNewsinformation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.sectionNewsInfoContiner .sectionNewsinformation .sectionTitle{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.sectionNewsinformation .newsTitle p{
+    font-size: 38px;
+    font-weight: 700;
+}
+.sectionNewsinformation .newsMedia .media{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.4rem;
+}
+.sectionNewsInfoContiner .newsMediaAndImage .newsMedia .media .mediaBox{
+    width: 44px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem 0.7rem;
+    border-radius: 0 8px 8px 0 !important;
+    gap: 10px;
+}
+.sectionNewsInfoContiner .newsMediaAndImage .newsMedia .media .mediaBox p{
+    padding-right: 10px;
+    margin-bottom: 0px;
+}
+.sectionNewsInfoContiner .newsImage img{
+    width: 598px !important;
+    height: 400px !important;
+    border-radius: 8px !important;
+    box-shadow: 7px 0px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.sectionEditorInformation{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin: 20px 0px;
+}
+.sectionEditorInformation .editorImage img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.sectionEditorInformation .editorNameDate .editorName,.newsDatePublish{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+.sectionNewsinformation .newsTags ul {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.3rem;
+}
+.sectionNewsinformation .newsTags ul .tag{
+    width: fit-content;
+    padding: 0.2rem 0.7rem;
+    border: 1px solid #1E1E1E;
+    box-shadow:  0px 0px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+.sectionNewsinformation .newsTags ul .tag:hover{
+    border: 1px solid #1E1E1E;
+    color: white;
+    background-color: black;
+}
+.sectionNewsInfoContiner .newsMediaAndImage{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.sectionNewsInfoContiner .newsMediaAndImage .newsMedia .media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+.newsMediaAndImage .newsMedia .media .mediaBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
