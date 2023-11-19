@@ -107,6 +107,7 @@
     background-image: url("../assetes/1-16129412.webp");
     background-size: cover;
     mix-blend-mode: luminosity;
+    position: relative;
 }
 .newsCard:hover{
     mix-blend-mode:normal;
